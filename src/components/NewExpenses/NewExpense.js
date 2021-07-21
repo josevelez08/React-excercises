@@ -8,13 +8,13 @@ const NewExpense = () => {
     const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
         ...enteredExpenseData,
-        id: Math.ramdom().toString()
+        id: Math.random().toString()
         };
         console.log(expenseData);
 };
     return (
     <div className="new-expense">
-        <ExpenseForm onSaveExpenseDate={saveExpenseDataHandler} />
+        <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
     </div>
     )
 }
